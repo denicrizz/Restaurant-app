@@ -1,0 +1,308 @@
+img {
+  display: block;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body, main{
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #76453B;
+  position: sticky;
+  padding: 8px 50px;
+  top: 0;
+}
+
+nav ul{
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+nav a{
+  text-decoration: none; 
+  color: white;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 15px;
+}
+
+nav li a:hover{
+  background-color: #561C24;
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+  transition: background-color 0.5s, border-radius 0.5s, padding 0.5s;
+}
+
+nav h1{
+  font-family: "Dancing Script", sans-serif;
+  color: white;
+  padding: 8px;
+}
+
+header{
+  display: inline;
+}
+
+.nav-toggle {
+  padding: 15px;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px; 
+  min-height: 44px;
+  background-color: transparent;
+  border: none;
+  color: white;  
+}
+
+@media screen and (max-width: 750px) {
+  .nav-links {
+    display: none;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #76453B;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+    z-index: 2000;
+  }
+}
+
+/*css heros*/
+
+.jumbroton img{
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .jumbroton img {
+        min-width: 1000px; /* Gambar hero memiliki lebar minimum 1000px saat lebar viewport setidaknya 1200px */
+    }
+}
+
+/*css list item*/
+.container {
+  padding: 20px;
+}
+
+.restaurant-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px;
+}
+
+.restaurant-item {
+  border-radius: 8px;
+  box-shadow: 0 1px 8px 1px #bfbfbf;
+  max-width:500px;
+  height: 850px;
+  margin: 0 5px 0 5px;
+}
+
+.restaurant-img {
+  border-radius: 28px;
+  padding: 20px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.restaurant-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.restaurant-city {
+  font-size: 18px;
+}
+
+.restaurant-description {
+  font-size: 14px;
+}
+
+.restaurant-rating{
+  font-size: 18px;
+  color: #7D0A0A;
+  font-weight: bold;
+}
+
+.restaurant-other{
+  text-align: center;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.restaurant-detail-a{
+  color: black;
+  font-size: 16;
+  font-weight: bold;
+  text-decoration: none;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-block;
+}
+
+/* CSS untuk halaman detail restoran */
+.container-detail{
+  padding: 20px;
+}
+
+.restaurant-detail {
+  border-radius: 8px;
+  box-shadow: 0 1px 8px 1px #bfbfbf;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.restaurant-detail h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #76453B;
+  margin-bottom: 20px;
+}
+
+.restaurant-detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.restaurant-detail p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.restaurant-detail h3 {
+  font-size: 1.5rem;
+  color: #76453B;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.restaurant-detail ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.restaurant-detail li {
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-detail img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .restaurant-detail h2 {
+    font-size: 1.5rem;
+  }
+
+  .restaurant-detail p {
+    font-size: 0.9rem;
+  }
+
+  .restaurant-detail h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.button-favorite{
+  font-family: "Quicksand", sans-serif;
+  padding: 12px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  min-width: 44px; 
+  min-height: 44px; 
+  display: inline-block; 
+}
+
+.favorite-add {
+  background-color: #E8751A;
+}
+
+.favorite-add:hover{
+  background-color: #c95e07;
+}
+
+.favorite-remove {
+  background-color: #D04848;
+}
+
+.favorite-remove:hover{
+  background-color: #c72a2a;
+}
+
+.favorite-message{
+  text-align: center;
+  font-size: 24px;
+}
+
+/*css footer*/
+footer{
+  background-color: #76453B;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*css skip to content*/
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+ 
+.skip-link:focus {
+   top: 0;
+}

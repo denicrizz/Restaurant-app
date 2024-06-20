@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Apps</title>
+  <meta name="theme-color" content="#000000">
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#content-main" class="skip-link">Menuju ke Konten</a>
+  <header>
+    <nav>
+      <h1 tabindex="0">Ashari Bakery</h1>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://www.instagram.com/adammaulana.kap?igsh=bmd4YWVsc3hvZGY0">About Us</a></li>
+      </ul>
+    </nav>
+    <div tabindex="0" class="jumbroton">
+      <picture>
+        <source media="(max-width: 480px)" srcset="images/heros/hero-image_2-small.jpg">
+        <source media="(min-width: 481px)" srcset="images/heros/hero-image_2-large.jpg">
+        <img src="images/heros/hero-image_2-large.jpg" alt="hero image">
+      </picture>
+    </div>
+  </header>
+
+  <main id="content-main">
+    <section class="restaurant-other">
+      <p tabindex="0">Explore Restaurant</p>
+    </section>
+
+    <section class="container">
+      <div id="restaurant-list" class="restaurant-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p tabindex="0">Copyright &#169; 2024, Ashari Bakery</p>
+  </footer>
+</body>
+</html>
